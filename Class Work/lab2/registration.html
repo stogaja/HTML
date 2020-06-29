@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+</head>
+<body style="background-color:grey">
+	<h1>Registration form</h1>
+<form>
+	<fieldset>
+		<legend>Personal Details</legend>
+			<label>First Name</label>
+			<input type="text" name="First Name" placeholder="Enter your first name" required><br>
+			<br>
+			<label>Second Name</label>
+			<input type="text" name="Second Name" placeholder="Enter your first name" required><br>
+			<br>
+			<label>Female</label>
+			<input type="radio" name="Female" value="medium" required>
+		 	<label>Male</label>
+		 	<input type="radio" name="Male" value="medium" required><br>
+		 	<br>
+		 	<label>Email</label>
+		 	<input type="text" name="Email" placeholder="Enter your email adress" required><br>
+		 	<br>
+		 	<label>Telephone Number</label>
+		 	<input type="numbers" name="Telephone Number" placeholder="Enter your phone number" required><br>
+		 	<br>
+		 	<label>Date of Birth</label>
+		 	<input type="date" name="Date" required><br>
+		 	<br>
+		 	<label>Marital Status</label>
+		 	<select name="Marital status">
+		 		<option value="Single">Single</option>
+		 		<option value="Married">Married</option>
+		 		<option value="Divorced">Divorced</option>
+		 	</select>
+	</fieldset>
+	<fieldset>
+		<legend>Education</legend>
+		<label>Highest Education</label>
+		<select name="Education">
+		 		<option value="Phd">Phd</option>
+		 		<option value="University">University</option>
+		 		<option value="Secondary School">Secondary School</option>
+		 	</select><br>
+		 	<br>
+		 <label>Institution</label>
+		 <input type="text" name="Institution" placeholder="Enter the institution studied at" required><br>
+		 <br>
+		 <label>Year</label>
+		 <input type="numbers" name="year" placeholder="Enter the year of study" required><br>
+		 <br>
+		 <label>Country</label>
+		 <input type="country" name="country" id="country" list="myCountry" placeholder="Enter your country" required>
+		 <datalist id="myCountry">
+		 	<option>Angola</option>
+		 	<option>Algeria</option>
+		 	<option>Congo</option>
+		 	<option>Ghana</option>
+		 	<option>Kenya</option>
+		 	<option>South Africa</option>
+		 	<option>Somalia</option>
+		 </datalist> <br>
+		 <br>
+		 <label>Upload a file</label>
+		 <input type="Upload" name="Upload" required><br>
+		 <br>
+	</fieldset>
+	<fieldset>
+		<legend>Hobbies</legend>
+		<label>Hobbies</label>
+		<textarea name="Hobbies" placeholder="Enter your hobbies" required></textarea><br>
+		<br>
+	</fieldset>
+</form>
+<br><button>REGISTER</button>
+<div style="margin-top:500px"></div>
+</body>
+</html>

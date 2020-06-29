@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+*{
+    font: 15px/1.5 'Roboto Condensed';
+    box-sizing: border-box;
+}
+  
+.column{
+    float: left;
+    padding: 10px;
+    height: 600px;
+}
+  
+.left, .right{
+    width: 25%;
+}
+
+.middle{
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.left, .middle, .right{
+    border: 1px solid black;
+  /*  background: grey;*/
+}
+
+.row h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.h21{
+    text-align: center;
+    font: 20px/1.5 'Roboto Condensed';
+    font-weight: bold;
+}
+.left p{
+  /*  background-color: chartreuse;*/
+    margin: 0;
+    border: 1px solid black; 
+}
+
+.right p{
+  /*  background-color: chartreuse;*/
+    margin: 0;
+    border: 1px solid black; 
+}
+
+.input{
+    border: 1px solid black;
+    padding:0px;
+    margin: 2px;
+    text-align: center;
+}
+#chats{
+    margin-top: 445px;
+    width: 80%;
+    border:1px solid black;
+}
+
+.left, a{
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+}
+

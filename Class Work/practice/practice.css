@@ -1,0 +1,26 @@
+body{
+	font-family: arial;
+}
+h1{
+	color:hotpink;
+}
+a:hover {
+	text-decoration: none;
+  text-decoration-color:green;
+  color: green;}
+.special > li{
+	color:orange;
+}
+li > em{
+	color:blue;
+}
+.p1{
+	font-size:150%;
+}
+ul{
+	list-style-type: none;
+}
+.ul2{
+	background-color: #eeeeee; 
+	border: solid purple 5px;
+}

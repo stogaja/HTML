@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+*{
+font: 15px/1.5 'Roboto Condensed';
+}
+.input-group{
+    margin: 10px 0px 10px 0px;
+}
+.header{
+    width: 30%;
+    margin: 20px auto 0px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+   /* border-radius: 10px 10px 0px 0px;*/
+    padding:5px 20px 5px 20px;
+  /*  background: black;
+    color: white;*/
+}
+.input-group label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 15px;
+    /*border-radius: 5px;*/
+    border: 1px solid black;
+}
+form{
+    width: 30%;
+    margin: 0px auto;
+    padding:0px 20px 0px 20px;
+    border: 1px solid black;
+  /*  background: white;
+    border-radius: 0px 0px 15px 15px;*/
+}
+.btn{
+    padding: 10px;
+   /* font-size: 15px;
+    color: white;
+    background: black;*/
+    border: none;
+    border-radius: 5px;
+}/*
+.btn:hover{
+    background:gray ;
+    font-weight: bold;
+    color: black;
+}
+.member a{
+    text-decoration: none;
+}
+.member a:hover{
+    color: black;
+}*/
+@media(max-width: 600px){
+    *{
+        margin: 0px;
+        padding: 2px;
+    }
+}

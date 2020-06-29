@@ -1,0 +1,26 @@
+body{
+    background-color: #dcdcdc;
+}
+.navbar{
+    height: 100px;
+    background-color: white !important;
+}
+.navbar-brand{
+    font-size: 35px;
+}
+.container-1{
+    margin-top: 150px;
+    background-color: white;
+}
+.active1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+.error {
+    background: #ff416c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}

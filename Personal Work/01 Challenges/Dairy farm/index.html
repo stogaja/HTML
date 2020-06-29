@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Digi | Dairy | Farm</title>
+</head>
+<body>
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">The <span style="color: blue;">| Dairy </span><span style="color: lightgreen;">| Farm</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active active1">
+            <a class="nav-link" href="#"><span style="color: lightgreen;">digi </span><span style="color: blue;"> Dairy</span> Farm<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">| Home |<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">| About |</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">| Contact Us |</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!--body-->
+    <div class="container container-1" id="container">
+      <form action="#" id="signInForm" class="form-group p-4">
+
+        <div class="msG"></div>
+
+        <input type="number" placeholder="Enter amount in litres" id="val1" class="form-control mt-3">
+
+        <input type="number" placeholder="Enter amount in litres" id="val2" class="form-control mt-3">
+
+        <input type="number" placeholder="Enter amount in litres" id="val3" class="form-control mt-3">
+
+        <input type="number" placeholder="Enter amount in litres" id="val4" class="form-control mt-3">
+
+        <input type="number" placeholder="Enter amount in litres" id="val5" class="form-control mt-3">
+
+        <button type="submit" value="submit" id="signIn" class="btn m-3 btn-outline-success">Submit</button>
+      </form>
+    </div>
+
+
+    <div class="container container-1 p-3">
+      <h3 class="text-center">Total Milk Produced(ltrs)</h3>
+      <table class="table table-dark table-hover table-condensed table-bordered ">
+          <tr class="text-center">
+              <th>Sheds</th>
+              <th>Milk(ltrs)</th>
+          </tr>
+          <tr class="text-center">
+              <td>A</td>
+              <td id="A" class="A text-center"></td>
+          </tr>
+          <tr class="text-center">
+              <td>B</td>
+              <td id="B"  class="B text-center"></td>
+          </tr>
+          <tr class="text-center">
+              <td>C</td>
+              <td id="C"  class="C text-center"></td>
+          </tr>
+          <tr class="text-center">
+              <td>D</td>
+              <td id="D"  class="D text-center"></td>
+          </tr>
+          <tr class="text-center">
+              <td>E</td>
+              <td id="E"  class="E text-center"></td>
+          </tr>
+          <tr>
+              <th>Totals</th>
+              <td id="totals" class="totals text-center"></td>
+          </tr>
+      </table>
+
+  </div>
+
+  <div class="container container-1 p-3">
+      <h3 class="text-center">
+          Value for Milk Produced
+      </h3>
+      <table class="table table-condensed table-dark table-bordered ">
+          <tr class="text-center">
+              <th>Milk(ltrs)</th>
+              <th>Amount(Shs.)</th>
+          </tr>
+          <tr> 
+              <td class="totals text-center">/Day</td>
+              <td id="totalAmountDay" class="text-center"></td>
+          </tr>
+          <tr>
+              <td class="totals text-center">/Week</td>
+              <td id="totalAmountWeek" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">/Year</td>
+              <td id="totalAmountYear" class="text-center"></td>
+          </tr>
+      </table>
+  </div>
+
+
+  <div class="container container-1 p-3">
+      <h3 class="text-center">
+          Value for Milk Produced
+      </h3>
+      <table class="table table-condensed table-dark table-bordered ">
+          <tr class="text-center">
+              <th>Milk for(mnths)</th>
+              <th>Amount(Shs.)</th>
+          </tr>
+          <tr> 
+              <td class="totals text-center">January</td>
+              <td id="totalAmountJanuary" class="text-center"></td>
+          </tr>
+          <tr>
+              <td class="totals text-center">February</td>
+              <td id="totalAmountFebruary" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">March</td>
+              <td id="totalAmountMarch" class=" text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">April</td>
+              <td id="totalAmountApril" class=" text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">May</td>
+              <td id="totalAmountMay" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">June</td>
+              <td id="totalAmountJune" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">July</td>
+              <td id="totalAmountJuly" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">August</td>
+              <td id="totalAmountAugust" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">September</td>
+              <td id="totalAmountSeptember" class=" text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">October</td>
+              <td id="totalAmountOctober" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">November</td>
+              <td id="totalAmountNovember" class="text-center"></td>
+          </tr>
+          <tr> 
+              <td class="totals text-center">December</td>
+              <td id="totalAmountDecember" class="text-center"></td>
+          </tr>
+      </table>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

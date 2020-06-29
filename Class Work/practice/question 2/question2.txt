@@ -1,0 +1,7 @@
+Write the ids of the elements selected by the given selectors:
+
+1.li==list-1
+2.ol li==cookie-3,cookie-4.
+3.ul > li==cookie-1,cookie-2,cookie-5,cookie-6.
+4.ol, ul==list-1,list-2,list-3.
+5.#list-1 li==cookie-1,cookie-2,list-id.

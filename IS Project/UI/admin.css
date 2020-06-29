@@ -1,0 +1,44 @@
+form{
+    border: 2px solid black;
+}
+#field1{
+    float:inline-start;
+    width: 50%;
+    border: 0.5px solid black;
+}
+.request1{
+    width: 75%;
+}
+#field2{
+    width: 50%;
+    float: inline-start;
+    border: 0.5px solid black;
+}
+#field3{
+ /*   float: inline-end;*/
+    width: 25%;
+    border: 0.5px solid black;
+    height:;
+}
+table, th, td{
+    border: 0.5px solid black;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    margin:0px;
+}
+.button{
+    margin-top: 120px;
+    float: right;
+    
+}
+
+/*USERS UI CSS*/
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+}
