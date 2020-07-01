@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
 * {
   margin: 0;
 }
 body {
+  font: "Roboto Condensed";
   position: relative;
   background-color: #000000;
-  overflow-x: hidden;
 }
 #banner h3 {
   position: absolute;
@@ -39,7 +41,7 @@ body {
 }
 nav {
   position: absolute;
-  width: 100%;
+  width: 98.7vw;
   height: 57px;
   left: 0px;
   top: 90px;
@@ -49,7 +51,7 @@ nav {
 ul {
   list-style-type: none;
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 23px;
   left: 20px;
   top: 12px;
@@ -72,14 +74,14 @@ ul li {
   position: absolute;
   width: 396px;
   height: 283px;
-  left: 200px;
+  left: 20px;
   top: 188px;
 }
 .text-1 {
   position: absolute;
-  width: 402px;
+  width: 400px;
   height: 175px;
-  left: 630px;
+  left: 530px;
   top: 240px;
 
   font-family: Roboto;
@@ -92,19 +94,15 @@ ul li {
 }
 .image-2 {
   position: absolute;
-  width: 392px;
   height: 273px;
   left: 590px;
   top: 460px;
-
-  height: 30rem;
-  width: 40rem;
 }
 .text-2 {
   position: absolute;
   width: 399px;
   height: 176px;
-  left: 180px;
+  left: 90px;
   top: 500px;
 
   font-family: Roboto;
@@ -120,35 +118,33 @@ ul li {
   width: 412px;
   height: 330px;
   left: 80px;
-  top: 800px;
+  top: 750px;
 }
 .text-3 {
   position: absolute;
-  width: 530px;
-  height: 580px;
+  width: 500px;
+  height: 550px;
   left: 500px;
-  top: 820px;
+  top: 790px;
 
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 29px;
 
   color: #e5e5e5;
 }
 .image-4 {
   position: absolute;
-  width: 495px;
   height: 290px;
-  left: 790px;
+  left: 550px;
   top: 1150px;
 }
 .text-4 {
   position: absolute;
   width: 500px;
   height: 224px;
-  left: 200px;
+  left: 20px;
   top: 1150px;
 
   font-family: Roboto;
@@ -163,20 +159,20 @@ ul li {
   position: absolute;
   width: 466px;
   height: 302px;
-  left: 120px;
+  left: 50px;
   top: 1500px;
 }
 .text-5 {
   position: absolute;
-  width: 500px;
+  width: 400px;
   height: 224px;
-  left: 620px;
+  left: 550px;
   top: 1500px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 28px;
 
   color: #e5e5e5;
@@ -264,4 +260,65 @@ ul li {
   /* identical to box height */
 
   color: #e5e5e5;
+}
+
+.one {
+  position: absolute;
+  width: 90px;
+  height: 13px;
+  left: 180px;
+  top: 190px;
+
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+.two {
+  position: absolute;
+  width: max-content;
+  height: 13px;
+  left: 700px;
+  top: 450px;
+
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+.three {
+  position: absolute;
+  width: max-content;
+  height: 13px;
+  left: 200px;
+  top: 750px;
+
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+.four {
+  position: absolute;
+  width: max-content;
+  height: 13px;
+  left: 700px;
+  top: 1130px;
+
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+.five {
+  position: absolute;
+  width: max-content;
+  height: 13px;
+  left: 200px;
+  top: 1470px;
+
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
 }
