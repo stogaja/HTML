@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Tesla | Cars</title>
+
+    <link rel="stylesheet" href="../../../../Bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
+  </head>
+  <body>
+      <!--The logo-->
+    <nav class="navbar navbar-main navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="ml-5 navbar-ico navbar-brand" href="#">EL CLASSICO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault"></div>
+    </nav>
+  <body>
+    <nav class="navbar navbar-main mt-5 navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="ml-5 navbar-ico navbar-brand two" href="#">AUTOMOBILES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault"></div>
+    </nav>
+
+    <!--the navbar-->
+            <nav class="navbar navbar-sub navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-5 active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            </li>
+            <li class="nav-item ml-5 active">
+                <a class="nav-link" href="#">Upcoming Cars</a>
+            </li>
+            </li>
+            <li class="nav-item ml-5 active">
+                <a class="nav-link" href="#">Electric Cars</a>
+            </li>
+            </li>
+            <li class="nav-item ml-5 active">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            </li>
+            <li class="nav-item ml-5 active">
+                <a class="nav-link" href="login-sign-up/index.html">Join Us...</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+
+        <!--the carousel-->
+    <div class="slider">
+        <div class="slide current">
+          <div class="content">
+            <h1>Mazda</h1>
+            
+          </div>
+        </div>
+  
+        <div class="slide">
+          <div class="content">
+            <h1>Nissan</h1>
+            
+          </div>
+        </div>
+  
+        <div class="slide">
+          <div class="content">
+            <h1>BMW</h1>
+            
+          </div>
+        </div>
+  
+        <div class="slide">
+          <div class="content">
+            <h1>Bugatti</h1>
+            
+          </div>
+        </div>
+  
+        <div class="slide">
+          <div class="content">
+            <h1>Lamborghini</h1>
+            
+          </div>
+        </div>
+    </div>
+  
+      <div class="buttons">
+        <button id="prev">left</button:prev>
+        <button id="next">right</button:prev>
+      </div>
+
+      <!--cards-->
+      <div class="row mt-5 mb-5">
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">A Mazda interior represents the unmistakable bond between driver and car. Every detail is expertly crafted, every component intuitively placed, creating a feeling of enveloping comfort that makes every journey more inspiring.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-1">
+              
+        </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/benz.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">The S-Class designation for top-of-the-line Mercedes-Benz models was officially introduced in 1972 with the W116, and has remained in use ...</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/4.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">The Bugatti Type 57 and later variants was an entirely new design created by Jean Bugatti.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-1">
+              
+        </div>
+      </div>
+
+    <script src="main.js"></script>
+    <script>
+    window.sr = ScrollReveal();
+      sr.reveal('.navbar', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '200px'
+    });
+    sr.reveal('.nav-link', {
+      duration: 3000,
+      delay: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    </script>
+  </body>
+</html>
