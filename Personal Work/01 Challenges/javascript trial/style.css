@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+}
+body{
+	background: #f4f4f4;
+}
+h1{
+	border-bottom: 3px solid black;
+	text-align: center;
+	margin: 0 30% 10px;
+}
+.first-div{
+	text-align: center;
+	line-height: 1.6rem;
+	word-spacing: 1px;
+	border-bottom: 3px solid black;
+	margin: 10px 10% 0;
+	background: #ccc;
+	border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border: 1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin: 10px 40% 0;
+}
+button:active{
+    transform: scale(0.95)
+}
+button:focus{
+    outline: none;
+}
+button.ghost{
+    background: transparent;
+    border-color: white;
+}
