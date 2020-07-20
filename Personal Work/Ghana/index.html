@@ -3,78 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <title>Ghana | Naming</title>
+
+    <script src="js/scroll_reveal/scrollreveal.min.js"></script>
+    <title>Akan | Naming</title>
   </head>
   <body>
-    <div class="pimg1">
-      <div class="ptext">
-        <span class="border">
-          Hi you, welcome to the Ghanian culture...
-          <small> <small> read below </small> </small>
-        </span>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Akan</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#About">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#footer-contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--main section-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card div" style="width: 550px;">
+            <div class="card-body">
+              <p class="card-text">
+                A Mazda interior represents the unmistakable bond between driver
+                and car. Every detail is expertly crafted, every component
+                intuitively placed, creating a feeling of enveloping comfort
+                that makes every journey more inspiring.A Mazda interior
+                represents the unmistakable bond between driver and car. Every
+                detail is expertly crafted, every component intuitively placed,
+                creating a feeling of enveloping comfort that makes every
+                journey more inspiring.
+              </p>
+            </div>
+          </div>
+
+          <!--the carousel-->
+          <div class="slider">
+            <div class="slide current">
+              <div class="content">
+                <h1>Our Culture</h1>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <h1>Our Flag</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="prev">prev</button>
+            <button id="next">next</button>
+          </div>
+        </div>
+
+        <div class="col-md-3"></div>
+        <div class="col-md-5">
+          <form class="myform" method="GET" onsubmit="getAkanName()">
+            <label for="year-of-birth">
+              Year:
+              <input
+                id="year-input"
+                type="number"
+                name="year-of-birth"
+                placeholder="YYYY"
+                value=""
+                required
+                min="1980"
+                max="2020"
+              />
+            </label>
+            <label for="month-of-birth">
+              Month:
+              <input
+                id="month-input"
+                type="number"
+                name="month-of-birth"
+                placeholder="MM"
+                value=""
+                required
+                min="1"
+                max="12"
+              />
+            </label>
+            <label for="day-of-birth">
+              Day:
+              <input
+                id="day-input"
+                type="number"
+                name="day-of-birth"
+                placeholder="DD"
+                value=""
+                required
+                min="1"
+                max="31"
+              />
+            </label>
+            <br />
+            <label for="gender">
+              <div id="gender ">
+                <p>GENDER:</p>
+                Male
+                <input
+                  id="male-input"
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  required
+                />
+                Female
+                <input
+                  id="female-input"
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  required
+                />
+              </div>
+            </label>
+            <br /><br />
+            <input id="result" type="submit" name="" value="Submit" />
+            <br /><br />
+          </form>
+          <form onsubmit="clearInput()">
+            <input class="clear" type="submit" value="Clear input" />
+          </form>
+        </div>
       </div>
     </div>
 
-    <section class="section section-light">
-      <h2>About Us</h2>
-      <p>
-        <b>Did you know that</b> Ghanaian names (or Personal names in Ghana)
-        consists of several given names and surnames based on the language of
-        ethnic groups in Ghana including Akan. Frequently, children are given a
-        "day name" which corresponds to the day in the week they were born.
-        These day names have further meanings concerning the soul and character
-        of the person. Middle names have considerably more variety and can refer
-        to their birth order, twin status, or an ancestor's middle name. These
-        names are also used among Ghanaians living abroad and among Africans
-        living in the diaspora who wish to identify with their ancestral
-        homeland. During the 18th-19th Century, the enslaved people from modern
-        day Ghana in the Caribbean were referred to as Coromantees. Most day
-        names among the Mole-Dagombas are usually given to the females and few
-        are given to both sexes. <br />
-        <br />
-        This site however helps you know your Akan name.
-      </p>
-    </section>
-
-    <div class="pimg2">
-      <div class="ptext">
-        <span class="border trans">
-          Our Flag
-        </span>
-      </div>
-    </div>
-
-    <section class="section section-dark">
-      <h2>About Akan</h2>
-      <p>
-        Akan names are derived from Ghanian culture. Frequently in Ghana,
-        children are given their first name as a 'day name' which corresponds to
-        the day in the week they were born. Here are Ghanian day names.
-      </p>
-    </section>
-
-    <div class="pimg3">
-      <div class="ptext">
-        <span class="border trans">
-          Just imagine how mighty and organised Ghanians are...
-        </span>
-      </div>
-    </div>
-
-    <section class="section section-dark">
-      <h2>Know your name..</h2>
-      <p>
-        <a href="info.html">Click here</a>
-      </p>
-    </section>
-
-    <div class="pimg1">
-      <div class="ptext">
-        <span class="border">
-          Thats all for now.
-        </span>
-      </div>
-    </div>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".navbar, .navbar-nav", {
+        duration: 3000,
+        origin: "bottom",
+        distance: "100px",
+      });
+      sr.reveal(".div", {
+        duration: 3000,
+        origin: "left",
+        distance: "100px",
+      });
+      sr.reveal(".slider", {
+        duration: 3000,
+        origin: "left",
+        distance: "100px",
+      });
+    </script>
+    <script src="js/slide.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
