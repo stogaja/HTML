@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pizza Mojjo</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-lg nav"
+    >
+      <h5 class="my-0 mr-md-auto brand font-weight-normal">𝓟𝓲𝔃𝔃𝓪 𝓜𝓸𝓳𝓳𝓸</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Enterprise</a>
+        <a class="p-2 text-dark" href="#">About</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+      </nav>
+      <a class="btn btn-outline-default btn-nav" href="#">Mojjo</a>
+    </div>
+
+    <!--the body-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pl-5">
+            <form id="priceForm">
+              <div class="form-group">
+                <label for="number">Choose your Pizza size*</label>
+                <select class="form-control" id="pizzaSize">
+                  <option value="600" selected>Small Pizza</option>
+                  <option value="900">Medium Pizza</option>
+                  <option value="1200">Large Pizza</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="number">Choose the crust on your pizza*</label>
+                <select id="pizzaCrust" class="form-control">
+                  <option value="80">Deep Pan</option>
+                  <option value="85">Classic Crust</option>
+                  <option value="90">Thin 'n' Crispy</option>
+                  <option value="95">Cheesy Crust</option>
+                  <option value="100">Glutten Free Base</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="number">Choose the toppings on your Pizza*</label>
+                <select id="pizzaTopping" class="form-control">
+                  <option value="100">Pepperoni</option>
+                  <option value="110">Mushrooms</option>
+                  <option value="120">Onions</option>
+                  <option value="100">Sausage</option>
+                  <option value="90">Bacon</option>
+                  <option value="100">Extra cheese</option>
+                  <option value="100">Black olives</option>
+                  <option value="100">Green peppers</option>
+                  <option value="100">Pineapple</option>
+                  <option value="100">Spinach</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="number">How many pizzas would you like?*</label>
+                <input
+                  required
+                  id="pizzaNumber"
+                  type="number"
+                  placeholder="Enter the number of pizzas"
+                  class="form-control"
+                  id="number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number"
+                  >Do you want it delivered? Enter your location.</label
+                >
+                <select id="pizzaLocation" class="form-control">
+                  <option value="0" selected
+                    >Please select your area of residence</option
+                  >
+                  <option value="500">Nairobi</option>
+                  <option value="900">Outside Nairobi</option>
+                </select>
+              </div>
+              <button
+                id="submit"
+                type="submit"
+                class="btn btn-default btn-outline-default btn-nav"
+              >
+                Order
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 mt-4 image-div">
+          <table
+            class="table table-condensed table-bordered shadow-lg table-dark table-hover"
+          >
+            <tr class="text-center">
+              <th>Product</th>
+              <th>Price(Shs.)</th>
+            </tr>
+
+            <tr>
+              <td class="totals text-center">Pizza</td>
+              <td id="pizzaOutput" class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="totals text-center">Crust</td>
+              <td id="crustOutput" class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="totals text-center">Toppings</td>
+              <td id="toppingOutput" class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="totals text-center">Quantity</td>
+              <td id="quantityOutput" class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="totals text-center">Delivery Fee</td>
+              <td id="deliveryOutput" class="text-center"></td>
+            </tr>
+            <tr class="text-center">
+              <th>Total Amount (Shs.)</th>
+              <td id="totals"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--script links-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
