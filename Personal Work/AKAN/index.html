@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ghana | Naming</title>
+  </head>
+  <body>
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border">
+          Hi you, welcome to the Ghanian culture...
+          <small> <small> read below </small> </small>
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>About us</h2>
+      <p>
+        <b>Did you know that</b> Ghanaian names (or Personal names in Ghana)
+        consists of several given names and surnames based on the language of
+        ethnic groups in Ghana including Akan. Frequently, children are given a
+        "day name" which corresponds to the day in the week they were born.
+        These day names have further meanings concerning the soul and character
+        of the person. Middle names have considerably more variety and can refer
+        to their birth order, twin status, or an ancestor's middle name. These
+        names are also used among Ghanaians living abroad and among Africans
+        living in the diaspora who wish to identify with their ancestral
+        homeland. During the 18th-19th Century, the enslaved people from modern
+        day Ghana in the Caribbean were referred to as Coromantees. Most day
+        names among the Mole-Dagombas are usually given to the females and few
+        are given to both sexes. <br />
+        <br />
+        This site however helps you know your Akan name.
+      </p>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">
+          Our Flag
+        </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>About Akan</h2>
+      <p>
+        Akan names are derived from Ghanian culture. Frequently in Ghana,
+        children are given their first name as a 'day name' which corresponds to
+        the day in the week they were born. Here are Ghanian day names.
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">
+          Just imagine how mighty and organised Ghanians are...
+        </span>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        <div class="answer"> 
+            <STRONG>
+               DO YOU WANT THE BABY NAME/
+            </STRONG>
+        </div>     
+                 fill in all the details bellow and get the name as fast as possible </p>
+    <p>
+                If you want to  find out what your Akan name is, continue to filling the form below and clicking the name button.
+    </div>
+  </div>
+    </body>
+    <form class="myform" onsubmit="return getAkanName()">
+      <label for="year-of-birth">
+          Year:
+              <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value=""  required
+              min="1980" max="2020">
+      </label>
+      <label for="month-of-birth">
+          Month:
+              <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required
+               min="1" max="12">
+      </label>
+        <label for="day-of-birth">
+          Day:
+              <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required
+              min="1" max="31">
+      </label>
+        <br>
+      <label for="gender">
+          <div id ="gender "><p>GENDER: </p>
+               Male
+                  <input id="male-input" type="radio" name="gender" value="male" required>
+              Female
+                   <input id="female-input" type="radio" name="gender" value="female" required>
+          </div>
+      </label>
+        <br><br>
+                  <input id="get-name" type="submit" name="" value="Name">
+        <br><br>
+  </form>
+  <form onsubmit="return clearInput()">
+                  <input class="clear" type="submit" value="Clear input">
+  </form>
+
+
+      <h4 id = display-name><strong> GET YOUR AKAN NAME HERE:</strong></h4>
+          <p id="result"></p>
+          <div id="name">
+      <script src="script.js" ></script>
+      </div>

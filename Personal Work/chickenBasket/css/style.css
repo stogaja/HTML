@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  word-spacing: normal; /*
+  background: url(../img/img1.jpg);*/
+}
+
+.navbar {
+  height: 80px;
+  background-color: #fef200 !important;
+  opacity: 0.75 !important;
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: 100px;
+}
+
+.navbar-nav {
+  margin-right: 200px;
+}
+
+.navbar-nav .nav-link {
+  height: 80px;
+  width: max-content;
+  font-size: 20px;
+  padding-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.85s;
+  opacity: 0;
+  background-color: #e69500;
+}
+
+.nav-link .nav-link::before {
+  left: 0;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-item:hover .nav-link::before {
+  width: 50px;
+  opacity: 1;
+}
+check here*/
+.nav-link:hover {
+  background-color: #333;
+  color: white !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease-in;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: -80px;
+  z-index: -5;
+  height: 80vh;
+  width: 100%;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.slide.current {
+  opacity: 1;
+}
+.slide .content {
+  position: absolute;
+  bottom: 100px;
+  left: -500px;
+  width: 500px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  color: #333;
+  padding: 18px;
+}
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(500px);
+  transition: all 0.7s ease-in-out 0.4s;
+}
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    /*height: 50px;*/
+  }
+  .slider {
+    height: 60vh;
+  }
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+.slide:first-child {
+  background: url("../img/img1.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("../img/img2.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url("../img/img3.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+  background: url("../img/img4.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(5) {
+  background: url("../img/img5.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(6) {
+  background: url("../img/img6.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(7) {
+  background: url("../img/img7.jpg") no-repeat center center/cover;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom, #fef200, #fffff0) no-repeat 0 0 / cover !important;
+  height: max-content;
+}
+
+.info {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  word-spacing: normal;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+.btn {
+  background-color: #d2383b;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 10px;
+  width: 200px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 5px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fef75c;
+  transition: all 0.5s ease-in;
+  padding-right: 24px;
+  padding-left: 8px;
+  box-shadow: none;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.basket {
+  font-size: 50px;
+  font-weight: bold;
+  color: #d2383b;
+}
+
+.h4 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+.p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.container3 {
+  height: max-content;
+  background: linear-gradient(to bottom, #fffff0, #ead510, #fef200) no-repeat 0
+    0 / cover !important;
+  /*margin-top: 100px;*/
+}
+.card {
+  background: inherit;
+  border: #333 solid 1px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+iframe {
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;
+  border-radius: 5px;
+}
