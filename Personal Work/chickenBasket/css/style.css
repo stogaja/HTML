@@ -35,33 +35,7 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
-/*
-.nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  width: 0px;
-  height: 5px;
-  margin: 5px 0 0;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.85s;
-  opacity: 0;
-  background-color: #e69500;
-}
 
-.nav-link .nav-link::before {
-  left: 0;
-}
-
-.nav-link:hover {
-  cursor: pointer;
-}
-
-.nav-item:hover .nav-link::before {
-  width: 50px;
-  opacity: 1;
-}
-check here*/
 .nav-link:hover {
   background-color: #333;
   color: white !important;
@@ -266,12 +240,36 @@ iframe {
   border-radius: 6px !important;
   border: 1px solid #333 !important;
 }
-/*
-.mastfoot {
-  height: 100px;
-  background: linear-gradient(to bottom, #fffff0, #fef200) no-repeat 0 0 / cover !important;
-}
-*/
-.footer-1{
+
+.footer-1 {
   background: #fef200;
+  border-bottom: 1px solid #999;
+}
+
+footer{
+  background: linear-gradient(to bottom,  #fef200,#ead510, #d2383b) no-repeat 0
+    0 / cover !important;
+}
+
+i{
+  color: black;
+  text-decoration: none;
+}
+
+i:hover{
+  text-decoration: none;
+  color: #d2383b;
+  transition: all 0.4s ease-in;
+}
+
+footer a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease-in;
 }
