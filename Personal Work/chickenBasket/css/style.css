@@ -266,3 +266,8 @@ iframe {
   border-radius: 6px !important;
   border: 1px solid #333 !important;
 }
+
+.mastfoot {
+  height: 100px;
+  background: linear-gradient(to bottom, #fffff0, #fef200) no-repeat 0 0 / cover !important;
+}
