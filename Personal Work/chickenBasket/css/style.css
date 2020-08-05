@@ -255,3 +255,14 @@ iframe {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.social-media {
+  border-radius: 6px !important;
+  border: 1px solid #333;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.twitter-timeline {
+  border-radius: 6px !important;
+  border: 1px solid #333 !important;
+}
